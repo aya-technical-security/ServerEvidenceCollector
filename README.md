@@ -5,51 +5,31 @@
 
 ---
 
-## ⚡ Features
+## 🔍 取得できる情報
 
-<table>
-<tr>
-<td>
-
-### 🔍 構成情報取得
+### 構成情報
 
 - OS情報
 - Hotfix
 - Disk情報
 - Volume情報
 
-</td>
-<td>
-
-### 🌐 ネットワーク情報
+### ネットワーク情報
 
 - IP設定
 - DNS
 - Firewall
 - Adapter情報
 
-</td>
-</tr>
-
-<tr>
-<td>
-
-### 👤 ユーザー情報
+### ユーザー・サービス情報
 
 - LocalUser
 - Service一覧
 
-</td>
-<td>
-
-### 📄 ログ取得
+### ログ取得
 
 - System Log
 - Application Log
-
-</td>
-</tr>
-</table>
 
 ---
 
@@ -65,62 +45,49 @@ output/evidence_DESKTOP-XXXX.txt
 
 ---
 
-## 📁 Directory
+## 📁 フォルダ構成
 
 ```txt
 ServerEvidenceCollector/
 ├─ config.json
 ├─ run_sec.bat
 ├─ sec.ps1
-└─ output/
+└─ output/   ← 実行後に自動生成
 ```
 
 ---
 
-## 🚀 Usage
+## 🚀 実行方法
 
-### 1. ZIPを展開
-
-GitHubからダウンロード。
-
-### 2. 管理者実行
-
-```txt
-run_sec.bat
-```
-
-を右クリック。
-
-```txt
-管理者として実行
-```
+1. ZIPを展開
+2. `run_sec.bat` を右クリック
+3. 「管理者として実行」
 
 ---
 
-## ⚠ Security
+## ⚠ 注意事項
 
-取得される証跡には以下が含まれます。
+取得した証跡には以下の情報が含まれます。
 
 - IPアドレス
 - DNS設定
 - ソフトウェア一覧
-- ローカルユーザー
+- ローカルユーザー情報
 
-外部公開には注意してください。
+そのまま外部公開しないでください。
 
 ---
 
-## 🔧 Future
+## 🔧 今後追加したい機能
 
 - 規定値チェック
 - HTMLレポート
 - CSV出力
 - 複数サーバ対応
-- リモート収集
 
 ---
 
-## 🧰 Built With
+## 🧰 使用技術
 
 - PowerShell
 - Git
