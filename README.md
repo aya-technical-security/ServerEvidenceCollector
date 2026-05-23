@@ -93,3 +93,21 @@ ServerEvidenceCollector/
 - Git
 - GitHub
 - JSON
+
+---
+
+## 📦 ダウンロード
+
+右上の
+
+```txt
+Code
+```
+
+↓
+
+```txt
+Download ZIP
+```
+
+からダウンロードしてください。
