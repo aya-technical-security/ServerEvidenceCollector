@@ -1,57 +1,74 @@
-# ServerEvidenceCollector
+# 🛡️ ServerEvidenceCollector
 
-Windows Server / Windows PC 向けの証跡自動取得ツールです。
-
-PowerShell を利用して、構成情報・監査情報・設定情報を自動収集し、テキスト形式で出力します。
-
----
-
-# Features
-
-- OS information
-- Installed software
-- Hotfix information
-- Disk information
-- Network configuration
-- DNS settings
-- Firewall profiles
-- Local users
-- Services
-- Event logs
+> Windows Server の構成情報・監査情報を  
+> 自動取得する PowerShell ベースの証跡収集ツール
 
 ---
 
-# Usage
+## ⚡ Features
 
-## Run
+<table>
+<tr>
+<td>
 
-Right click:
+### 🔍 構成情報取得
+
+- OS情報
+- Hotfix
+- Disk情報
+- Volume情報
+
+</td>
+<td>
+
+### 🌐 ネットワーク情報
+
+- IP設定
+- DNS
+- Firewall
+- Adapter情報
+
+</td>
+</tr>
+
+<tr>
+<td>
+
+### 👤 ユーザー情報
+
+- LocalUser
+- Service一覧
+
+</td>
+<td>
+
+### 📄 ログ取得
+
+- System Log
+- Application Log
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🖥️ 実行イメージ
 
 ```txt
 run_sec.bat
-```
-
 ↓
-
-```txt
-Run as Administrator
-```
-
----
-
-# Output
-
-```txt
+PowerShell 実行
+↓
 output/evidence_DESKTOP-XXXX.txt
 ```
 
 ---
 
-# Directory Structure
+## 📁 Directory
 
 ```txt
 ServerEvidenceCollector/
-├─ .gitignore
 ├─ config.json
 ├─ run_sec.bat
 ├─ sec.ps1
@@ -60,29 +77,50 @@ ServerEvidenceCollector/
 
 ---
 
-# Security Notice
+## 🚀 Usage
 
-Generated evidence files may contain:
+### 1. ZIPを展開
 
-- Hostnames
-- IP addresses
-- Installed software
-- Local user information
+GitHubからダウンロード。
 
-Do NOT publish generated evidence files.
+### 2. 管理者実行
 
----
+```txt
+run_sec.bat
+```
 
-# Future Plans
+を右クリック。
 
-- JSON policy validation
-- HTML report generation
-- Multi-server support
-- Remote collection support
+```txt
+管理者として実行
+```
 
 ---
 
-# Technologies
+## ⚠ Security
+
+取得される証跡には以下が含まれます。
+
+- IPアドレス
+- DNS設定
+- ソフトウェア一覧
+- ローカルユーザー
+
+外部公開には注意してください。
+
+---
+
+## 🔧 Future
+
+- 規定値チェック
+- HTMLレポート
+- CSV出力
+- 複数サーバ対応
+- リモート収集
+
+---
+
+## 🧰 Built With
 
 - PowerShell
 - Git
